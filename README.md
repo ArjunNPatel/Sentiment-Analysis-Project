@@ -4,7 +4,7 @@
 A company is any buisness whose stock is listed on a U.S. stock exchange or whose securities are publicly offered in the United States.
 
 
-Business outlook is a qualitative measure of how a company believes it will preform financially, espically in the short-term. For example, if a company believes its new product will have a record number of sales, that it a positive business outlook. If a company thinks that it will expierince supply-chain issues, thus taking loss in the near future, that is a negative business outlook. The term outlook is also used.
+Business outlook is a qualitative measure of how a company believes it will preform financially, espically in the short-term. For example, if a company believes its new product will have a record number of sales, that it a positive business outlook. As another example, if a company thinks that it will expierince supply-chain issues, thus taking loss in the near future, that is a negative business outlook. The term outlook is also used.
 
 
 ### Define the Problem
