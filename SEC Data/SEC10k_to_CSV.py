@@ -1,6 +1,5 @@
 #this code will get sections 1 and 7A from the lastest 10k SEC filings for various companies.
 import csv
-#pip install with this if sec is giving error (without the quotes): 'pip install sec-api'
 from sec_api import QueryApi
 import csv
 from sec_api import ExtractorApi
@@ -16,11 +15,7 @@ def main():
     ten_k_list = []
     for ticker in ticker_list:
         ten_k_list.append(recent_Ten_k(ticker))
-
-
-
-
-    #ticker_list and ten_k_html_list should be same length
+    
     for x in range(0,len(ticker_list)):
         # Thanks to Code from Haris; HarisMahmood8
         if(ten_k_list[x] != "No Link"):
