@@ -1,3 +1,12 @@
+"""
+The code used to get the 10k data struggles with HTML entities that are used to represent special characters
+https://www.freeformatter.com/html-entities.html
+https://www.w3schools.com/html/html_entities.asp  
+
+This code will revert those characters back from their entity number to the actual format.
+
+In other words, this cleans the text so it because human-readable.
+"""
 import re
 import csv
 def main():
