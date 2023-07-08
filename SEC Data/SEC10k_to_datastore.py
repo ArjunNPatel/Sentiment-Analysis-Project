@@ -54,7 +54,7 @@ def extract_section_text(ticker, ten_k):
     # The kind for the new entity
     kind = '10k_company_data'
     # The name/ID for the new entity
-    name = ticker + " data"
+    name = ticker + " data" + ten_k["filedAt"][0:4]
     # The Cloud Datastore key for the new entity
     task_key = datastore_client.key(kind, name)
     # Prepares the new entity
