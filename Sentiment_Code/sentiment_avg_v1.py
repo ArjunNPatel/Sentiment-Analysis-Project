@@ -21,13 +21,13 @@ from nltk import *
 
 
 # GLOBALS
-client = language.LanguageServiceClient.from_service_account_json("/home/arjunnipatel/2023summer/auth.json")
+client = language.LanguageServiceClient.from_service_account_json("file/path/to/your/json/google/auth")
 total = 0.0
 score = 0.0
 mag = 0.0
 def main():
     sentences = []
-    file_name = "/home/arjunnipatel/2023summer/sectest.csv"
+    file_name = "/file/path/to/sec_data.csv"
     with open(file_name, mode = "r") as readfile:
         csv_reader = csv.reader(readfile,delimiter= ",")
         rows = list(csv_reader)
