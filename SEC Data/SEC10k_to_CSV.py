@@ -49,7 +49,7 @@ def extract_section_text(ticker, ten_k):
     section_html = myExtractor.get_section(filing_url, "7", "html")
     soup = BeautifulSoup(section_html, 'html.parser')
     section_text_html_stripped = soup.get_text()
-    with open( "sec_data" + str(ticker) + ".csv", mode='w', encoding='utf-8') as csv_file:
+    with open( "sec_data" + str(ticker) + ten_k["filedAt"][0:4] + ".csv", mode='w', encoding='utf-8') as csv_file:
         writer = csv.writer(csv_file)
         writer.writerow(['Section', 'Content'])
         writer.writerow(['Name', str(ticker)])
