@@ -1,4 +1,4 @@
-#this code will get sections 1 and 7A from the lastest 10k SEC filings for various companies.
+#this code will get sections 1 and 7A from the lastest 10k SEC filings for various companies. It tries to collect up to a decade of data.
 import csv
 from sec_api import QueryApi
 import csv
