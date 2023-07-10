@@ -6,7 +6,7 @@ One drawback of this is the values generated from each sentences contributes equ
 For example:
 A company writes "Frustration with customer support remains a *very minor* cause of social tensions".
 The next sentence is "*Very minor* growth in earnings expected from new product".
-The second sentence should be weighted higher because earnings tracks stock value very closely, while social tensions does not necessarily do so.
+The second sentence should be weighted higher because earnings impacts / causes change in  stock value more obviously, while social tensions does not necessarily do so.
 """
 
 import csv
