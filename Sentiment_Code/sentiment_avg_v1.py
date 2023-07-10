@@ -4,9 +4,10 @@ Takes the average of the scores and magnitudes.
 One drawback of this is the values generated from each sentences contributes equally to each sentence. 
 (In the weighted average calculation, all sentences recieve the weight of 1). 
 For example:
-A company writes "Frustration with customer support remains a *very minor* cause of social tensions".
+A company writes " Americans tend to have *very minor* frustration with grocery stores, which in general hurts our on-shelf sales".
 The next sentence is "*Very minor* growth in earnings expected from new product".
-The second sentence should be weighted higher because earnings impacts / causes change in  stock value more obviously, while social tensions does not necessarily do so.
+The second sentence should be weighted higher because earnings impacts / causes change in  stock value more obviously,
+while generic social tensions does not necessarily affect the stock of this specific company.
 """
 
 import csv
