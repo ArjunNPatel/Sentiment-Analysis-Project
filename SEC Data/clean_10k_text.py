@@ -9,29 +9,26 @@ In other words, this cleans the text so it because human-readable.
 """
 import re
 import csv
-def main():
-    file_name = "sec_dataIBM copy.csv" 
-    section_name = []
-    section_text = []
+def clean_csv(file_name): 
+    csv_rows = []
     with open(file_name) as readfile:
-        csv_reader = csv.reader(readfile,delimiter= ",")
+        csv_reader = csv.DictReader(readfile,delimiter= ",")
         for row in csv_reader:
-            section_name.append(row[0])
-            section_text.append(row[1])
-
-    for i in range(len(section_text)):
-        section_text[i] = clean(section_text[i])
+            csv_rows.append([row["Name"], row["Date of 10k Filing"], clean(row["1A"]), clean(row["7"])])
+            
 
     with open(file_name, mode = "w") as writefile:
         writer = csv.writer(writefile)
-        for i in range(len(section_text)):
-            writer.writerow([section_name[i], section_text[i]])
+        writer.writerow(["Name", "Date of 10k Filing", "1A", "7"])
+        for row in csv_rows:
+            writer.writerow([row[0], row[1], row[2], row[3]])
     print("Success!")
 def clean(text):
     replace = {
         #symbols that are not needed
         "&#8226;": "",
         "&#8203;": "",
+        "&#160;": "",
         #dashes
         "&#8212;":"—",
         "&#8209;": "-",
@@ -40,14 +37,18 @@ def clean(text):
         "&#8220;": "\"",
         "&#8221;": "\"",
         "&#8217;":"\'",
-        "&#38": "&"        
+        "&#146;": "\'",
+        "&#147;": "\"",
+        "&#148;": "\"",
+        "&#38;": "&"        
     }
     #getting back apostrophes
     for key in replace:
         text = re.sub(key, replace[key], text)
+    text = re.sub("&#.*?;", "", text)
     return text
 
 
 
 if __name__ == "__main__":
-    main()
+    clean_csv("sec_dataAAPL.csv")
