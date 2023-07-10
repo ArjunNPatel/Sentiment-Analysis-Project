@@ -10,67 +10,70 @@ The second sentence should be weighted higher because earnings tracks stock valu
 """
 
 import csv
-# Imports the Google Cloud client library
-from google.cloud import language_v1
-from google.cloud import language
 #pip install nltk
-from nltk import *
+from nltk.sentiment.vader import SentimentIntensityAnalyzer
+from nltk.tokenize import sent_tokenize
 #nltk.download("punkt")
+#nltk.dowload('vader_lexicon')
 #We would like to thank NLTK (Natural Language Toolkit)
 #Bird, Steven, Edward Loper and Ewan Klein (2009), Natural Language Processing with Python. O’Reilly Media Inc.
 
 
 # GLOBALS
-client = language.LanguageServiceClient.from_service_account_json("file/path/to/your/json/google/auth")
 total = 0.0
-score = 0.0
-mag = 0.0
-def main():
-    sentences = []
-    file_name = "/file/path/to/sec_data.csv"
+values = {
+    "pos": 0.0,
+    "neg": 0.0,
+    "neu": 0.0,
+    "compound": 0.0
+}
+sentiment = SentimentIntensityAnalyzer()
+#values = [neg, neu, pos, compound]
+def analyze_sentiment(file_name, ticker):
+    global total, values
+    with open("results" + ticker + ".csv", mode = "w") as f:
+        writer = csv.writer(f)
+        writer.writerow(["Name", "Date of 10k Filing", "Negative", "Neutral", "Positive", "Compound"])
     with open(file_name, mode = "r") as readfile:
-        csv_reader = csv.reader(readfile,delimiter= ",")
-        rows = list(csv_reader)
-        string1A = rows[3][1]
-        Section_1A = sent_tokenize(string1A)
-        string7 = rows[4][1]
-        Section_7 = sent_tokenize(string7)
-        sentences = Section_1A + Section_7
-    with open("results.txt", mode = "w") as f:
-        try:
-            for sentence in sentences:
-                print(sentence)
-                f.write(sentence + "\n")
-                temp_values = figure(sentence)
-                f.write(str(temp_values[0]) + " " + str(temp_values[1]) + "\n")
-            f.write("The weighted average score of the text is " + str(score / total) + "\n")
-            f.write("The weighted average magnitude of the text is " + str(mag / total) + "\n")
-        except ZeroDivisionError:
-            f.write("There was no data to analyze.\n")
-        except Exception as e:
-            f.write("Something else went wrong.\n")
-            f.write(e)
-            print(e)
+        csv_reader = csv.DictReader(readfile,delimiter= ",")
 
-def figure(text):
-    global total, score, mag
-    document = language_v1.types.Document(
-        content=text, type_=language_v1.types.Document.Type.PLAIN_TEXT
-    )
+        for row in csv_reader:
+            Section_1A = sent_tokenize(row["1A"])
+            Section_7 = sent_tokenize(row["7"])
+            sentences = Section_1A + Section_7
+            with open("results" + ticker + ".csv", mode = "a") as f:
+                writer = csv.writer(f)
+                try:
+                    values["pos"]= 0.0
+                    values["neg"] = 0.0
+                    values["neu"] = 0.0
+                    values["compound"] = 0.0
+                    total = 0.0
+                    for sentence in sentences:
+                        sentiment_calulation(sentence)
+                    writer.writerow([ 
+                        row["Name"], 
+                        row["Date of 10k Filing"],  
+                        values["neg"]/total,
+                        values["neu"]/total,
+                        values["pos"]/total,
+                        values["compound"]/total  
+                        ])
+                except ZeroDivisionError:
+                    print("There was no data to analyze.\n")
+                except Exception as e:
+                    print(e)
 
-    # Detects the sentiment of the text
-    response = client.analyze_sentiment(
-        request={"document": document}
-    ).document_sentiment
+def sentiment_calulation(text):
+    global total, values
     weight = 1
-    t_score =  response.score
-    t_mag = response.magnitude
-    total +=  weight
-    score += t_score*weight
-    mag += t_mag*weight
-    print(t_score)
-    print(t_mag)
-    return [t_score, t_mag]
+    sentence_values = sentiment.polarity_scores(text)
+    values["pos"] += weight*sentence_values["pos"]
+    values["neg"] += weight*sentence_values["neg"]
+    values["neu"] += weight*sentence_values["neu"]
+    values["compound"] += weight*sentence_values["compound"]
+    total += weight
+    
 
 if __name__ == '__main__':
-    main()
+    analyze_sentiment("/home/arjunnipatel/2023summer/sectest.csv", "AAPL")
