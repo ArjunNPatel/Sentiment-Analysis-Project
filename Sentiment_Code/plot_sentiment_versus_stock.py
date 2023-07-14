@@ -2,6 +2,7 @@
 Produces a scatterplot of the sentiment score from the 10k versus the stock percent change ((new - original) / original) in value. 
 Original is the adj close stock value on a day closest to the filing of the 10k.
 New is the adj close stock value on a day closest to {6months, 1 year, 18months, 2 years} after the filing of the 10k.
+Soon we will add regression to this.
 """
 
 import yfinance as yf
