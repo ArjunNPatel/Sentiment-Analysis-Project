@@ -1,5 +1,6 @@
 # Sentiment-Analysis-Project
 This project is part of research work at the University of Connecticut-Stamford Campus. 
+People: Arjun N Patel, John Iacovacci and Philip G. Bradford
 ### Definitions
 A company is any business whose stock is listed on a U.S. stock exchange or whose securities are publicly offered in the United States.
 
