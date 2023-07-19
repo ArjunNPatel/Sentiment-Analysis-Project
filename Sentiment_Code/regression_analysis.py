@@ -6,7 +6,7 @@ def LinearModel(x,y, xlabel = "S_wa", ylabel = "R_st"):
     model = LinearRegression()
 
     model.fit(x,y)
-    Text = f"r squared is {model.score(x,y)}. Formula is {ylabel} = {model.coef_[0]}*{xlabel} + {model.intercept_}"
+    Text = f"r2: {'%.3f'%(model.score(x,y))}. {ylabel} = {'%.3f'%(model.coef_[0])}*{xlabel} + {'%.3f'%(model.intercept_)}"
     info = {
         "Text": Text,
         "R2": model.score(x,y),
