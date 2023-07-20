@@ -1,0 +1,60 @@
+The year-over-year growth rate of Retail net sales was less than the increase in the average number of stores open during the same period, which the Company believes reflects the challenging consumer-spending environment and continued third-party channel expansion, particularly in the U.S. where most of its stores are located.
+With an average of 254 stores and 211 stores opened during 2009 and 2008, respectively, average revenue per store decreased to $25.9 million for 2009 from $29.9 million in 2008.
+The Retail segment’s net sales grew by 53% during 2008 compared to 2007, due in large part to increased sales of Mac portable and desktop systems, strong demand for the iPhone and iPod touch, and new store openings. 
+The Company opened 50 new retail stores during 2008, bringing the total number of open stores to 247 as of September 27, 2008. 
+This compares to 197 open stores as of September 29, 2007. With an average of 211 stores and 178 stores opened during 2008 and 2007, respectively, average revenue per store increased to $29.9 million for 2008 from $23.1 million in 2007.
+The Company’s Other Segments, which consist of its Asia Pacific and FileMaker operations, experienced an increase in net sales of $165 million, or 7%, during 2009 as compared to 2008 reflecting strong growth in sales of iPhone and Mac portable systems offset partially by a decline in sales related to iPods and Mac desktop systems in the Asia Pacific region, as well as a strengthening of the U.S. dollar against the Australian dollar and other Asian currencies. 
+Mac net sales and unit sales grew in the Asia Pacific region by 4% and 17%, respectively, due to increased sales of the MacBook Pro.
+The Company’s Other Segments experienced an increase in net sales of $707 million, or 40% during 2008 as compared to 2007. 
+These increases are related primarily to strong growth in sales of all Mac portable systems, iPods, the iMac, and content from the iTunes Store in the Company’s Asia Pacific region. 
+Sales from the iTunes Store in the Company’s Asia Pacific region grew 109% compared to 2007.
+The Company expects its gross margin percentage to decrease in future periods compared to levels achieved during 2009 and anticipates gross margin levels of about 34% in the first quarter of 2010. 
+This expected decline is due largely to the anticipated impact of product transitions, flat or reduced pricing on new and innovative products that have higher cost structures, and both expected and potential future cost increases for key components.
+As a result, the Company must make significant investments in research and development and as such, the Company currently holds a significant number of patents and copyrights and has registered and/or has applied to register numerous patents, trademarks and service marks. 
+Price competition has been particularly intense as competitors selling Windows-based personal computers have aggressively cut prices and lowered product margins. 
+At present, the Company is vigorously defending more than 47 patent infringement cases, 27 of which were filed during fiscal 2009, and several pending claims are in various stages of evaluation. 
+While the Company is widely recognized as a leading innovator in the personal computer, mobile communications and consumer electronics markets as well as a leader in the emerging market for distribution of digital content and applications, these markets are highly competitive and subject to aggressive pricing. 
+Partially offsetting the favorable factors discussed above, net sales during 2009 were negatively impacted by certain factors, including the following:
+Net sales of iPods decreased $1.1 billion or 12% during 2009 compared to 2008. 
+Net sales of iPods increased $848 million or 10% during 2008 compared to 2007 whereas unit sales of iPods increased 6% compared to 2007. 
+The key contributors to this growth were increased iPhone revenue, stronger demand for certain Mac portable systems and iPods, and strength in the Japanese Yen, partially offset by decreased sales of Mac desktop systems. 
+Mac net sales were $23.2 billion in 2012, representing an increase of $1.4 billion or 7% compared to 2011. 
+iPhone year-over-year net sales growth reflected strong demand for iPhone 4 in all of the Company’s operating segments. 
+iPhone 5 was launched in a limited number of countries in the Europe segment at the end of the fourth quarter of 2012 and did not contribute to the growth in net sales in the Europe segment to the extent it did in other segments. 
+The Japan segment represented approximately 7% and 5% of the Company’s total net sales for 2012 and 2011, respectively.
+The growth in net sales during 2012 was mainly due to increased demand for iPhone from the launch of iPhone 4S, strong demand for the new iPad and iPad 2, and higher Mac sales.
+We are devoting significant resources to develop and deploy our own competing cloud-based software plus services strategies. 
+While we believe our expertise, investments in infrastructure, and the breadth of our cloud-based services provides us with a strong foundation to compete, it is uncertain whether our strategies will attract the users or generate the revenue required to be successful. 
+Certain “open source” software business models challenge our license-based software model. 
+Although we license portions of our application and operating system source code to a number of licensees, we take significant measures to protect the secrecy of large portions of our source code.
+As we continue to execute our strategy of increasing the number and scale of our cloud-based offerings, we store and process increasingly large amounts of personally identifiable information of our customers. 
+Lawsuits brought by the U.S. Department of Justice, 18 states, and the District of Columbia in two separate actions were resolved through a Consent Decree that took effect in 2001 and a Final Judgment entered in 2002. 
+These proceedings imposed various constraints on our Windows operating system businesses. 
+Although the Consent Decree and Final Judgment expired in May 2011, we expect that federal and state antitrust authorities will continue to closely scrutinize our business.
+The European Commission closely scrutinizes the design of high-volume Microsoft products and the terms on which we make certain technologies used in these products, such as file formats, programming interfaces, and protocols, available to other companies. 
+In 2009, the Commission accepted a set of commitments offered by Microsoft to address the Commission’s concerns relating to competition in Web browsing software. 
+We operate in over 100 countries and a significant part of our revenue comes from international sales. 
+Our corporate headquarters, a significant portion of our research and development activities, and certain other critical business operations are located in the Seattle, Washington area, and we have other business operations in the Silicon Valley area of California, both of which are near major earthquake faults.
+Over the last decade, Microsoft redefined software productivity beyond the rich Office client on the PC. 
+Our revenue historically has fluctuated quarterly and has generally been the highest in the second quarter of our fiscal year due to corporate calendar year-end spending trends in our major markets and holiday season spending by consumers. 
+Cost of revenue increased $3.2 billion or 26%, due to higher costs associated with our online offerings, including traffic acquisition costs, and increased volumes of Xbox 360 consoles and Kinect sensors sold.
+General and administrative expenses increased $159 million or 4%, due mainly to higher headcount-related expenses and new Puerto Rican excise taxes, partially offset by prior year transition expenses associated with the inception of the Yahoo! Commercial Agreement.
+Revenue increased mainly due to strong sales of Windows 7, which was released during fiscal year 2010, and PC market improvement. 
+Operating income increased reflecting the change in revenue, offset in part by higher operating expenses.
+Sales and marketing expenses increased $335 million or 3%, primarily reflecting increased advertising and marketing of Windows 7 and Bing and increased sales force expenses related to Windows 7.
+General and administrative expenses increased $33 million or 1% due mainly to increased legal charges and transition expenses associated with the inception of the Yahoo! Commercial Agreement, offset in part by a reduction in headcount-related expenses.
+Cost of revenue increased $240 million or 2%, primarily reflecting increased online costs and charges resulting from the discontinuation of the KIN phone, offset in part by decreased Xbox 360 console costs and reductions in other costs due to resource management efforts.
+We estimate that sales of PCs to businesses grew approximately 11% this year and sales of PCs to consumers declined approximately 1%. 
+The decline in consumer PC sales included an approximately 32% decline in the sales of netbooks.
+Revenue was negatively impacted by the effect of higher growth in emerging markets, where average selling prices are lower, relative to developed markets, and by lower recognition of previously deferred Windows XP revenue. 
+Product revenue increased $1.4 billion or 11%, driven primarily by growth in Windows Server, SQL Server, Enterprise CAL Suites, and Windows Embedded, reflecting continued adoption of Windows platform applications. 
+Server and Tools operating income increased due mainly to revenue growth, offset in part by increased cost of revenue. 
+MBD operating income increased due mainly to revenue growth, offset in part by higher operating expenses. 
+Cost of revenue increased $335 million or 26%, primarily driven by higher online costs and services. 
+Sales and marketing expenses increased $97 million or 2%, primarily driven by an increase in corporate and cross-platform marketing activities. Research and development costs increased $79 million or 4%, primarily as a result of capitalization of certain Microsoft Office system software development costs in the prior year.
+EDD revenue increased primarily reflecting higher Xbox 360 platform revenue. 
+The capped call transactions are expected to reduce potential dilution of earnings per share upon conversion of the notes. 
+We anticipate the acquisition will extend Skype’s brand and reach of its network platform, while enhancing our existing portfolio of real-time communications products and services.
+On September 22, 2008, we announced the completion of the two repurchase programs approved by our Board of Directors during the first quarter of fiscal year 2007 (the “2007 Programs”) to buy back up to $40.0 billion of Microsoft common stock. 
+On September 22, 2008, we also announced that our Board of Directors approved a new share repurchase program authorizing up to $40.0 billion in share repurchases with an expiration date of September 30, 2013 (the “2008 Program”). 
+As of June 30, 2011, approximately $12.2 billion remained of the $40.0 billion approved repurchase amount. 
