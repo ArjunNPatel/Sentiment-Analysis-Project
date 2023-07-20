@@ -1,0 +1,60 @@
+Forward-looking statements can also be identified by words such as “anticipates,” “expects,” “believes,” “plans,” “predicts,” and similar terms. 
+The Company’s operations and performance depend significantly on worldwide economic conditions. 
+In the event of renewed financial turmoil affecting the banking system and financial markets, additional consolidation of the financial services industry, or significant financial service institution failures, there could be a new or incremental tightening in the credit markets, low liquidity, and extreme volatility in fixed income, credit, currency, and equity markets. 
+Global markets for personal computers, mobile communication devices, digital music and video devices, and related peripherals and services are highly competitive and subject to rapid technological change. 
+The Company’s ability to compete successfully depends heavily on its ability to ensure a continuing and timely introduction of innovative new products and technologies to the marketplace. 
+The Company believes it is unique in that it designs and develops nearly the entire solution for its personal computers, mobile communication devices, and consumer electronics, including the hardware, operating system, numerous software applications, and related services. 
+Most of the Company’s components and products are manufactured in whole or in part by a few third-party manufacturers. 
+The Company relies on access to third-party patents and intellectual property, and the Company’s future results could be materially adversely affected if it is alleged or found to have infringed intellectual property rights.
+The Company’s future operating performance depends on the performance of distributors, carriers and other resellers.
+Such a perception could discourage resellers from investing resources in the distribution and sale of the Company’s products or lead them to limit or cease distribution of those products. 
+Such endeavors may involve significant risks and uncertainties, including distraction of management from current operations, insufficient revenue to offset liabilities assumed and expenses associated with the strategy, inadequate return of capital, and unidentified issues not discovered in the Company’s due diligence. 
+Failure to do so could result in lost revenue, harm to reputation, and significant warranty and other expenses, and could have a material adverse impact on the Company’s financial condition and operating results.
+Laws and regulations related to mobile communications devices in the many jurisdictions in which the Company operates are extensive and subject to change. 
+Such changes, which could include but are not limited to restrictions on production, manufacture, distribution, and use of the device, locking the device to a carrier’s network, or mandating the use of the device on more than one carrier’s network, could materially adversely affect the Company’s financial condition and operating results.
+Much of the Company’s future success depends on the continued availability and service of key personnel, including its CEO, its executive team and highly skilled employees in technical, marketing and staff positions. 
+Experienced personnel in the technology industry are in high demand and competition for their talents is intense, especially in the Silicon Valley, where most of the Company’s key personnel are located. 
+There can be no assurance that the Company will continue to attract and retain key personnel.
+War, terrorism, geopolitical uncertainties, public health issues, and other business interruptions have caused and could cause damage or disruption to international commerce and the global economy, and thus could have a strong negative effect on the Company, its suppliers, logistics providers, manufacturing vendors and customers, including channel partners. 
+Information technology system failures, network disruptions and breaches of data security caused by such factors including without limitation earthquakes, fire, theft, or other causes could disrupt the Company’s operations by causing delays or cancellation of customer, including channel partner, orders, negatively affecting the Company’s online, iTunes, MobileMe and retail offerings and services, impeding the manufacture or shipment of products, processing transactions and reporting financial results, resulting in the unintentional disclosure of customer or Company information, or damage to the Company’s reputation. 
+The Company expects its quarterly revenue and operating results to fluctuate for a variety of reasons.
+Global economic conditions could materially adversely affect the Company.
+The Company’s products and services compete in highly competitive global markets characterized by aggressive price cutting and resulting downward pressure on gross margins, frequent introduction of new products, short product life cycles, evolving industry standards, continual improvement in product price/performance characteristics, rapid adoption of technological and product advancements by competitors, and price sensitivity on the part of consumers.
+Manufacturing or logistics in these locations or transit to final destinations may be disrupted for a variety of reasons including, but not limited to, natural and man-made disasters, information technology system failures, military actions or economic, business, labor, environmental, public health, or political issues.
+The Company will continue to evaluate the realizability of deferred tax assets quarterly by assessing the need for and amount of a valuation allowance.
+The Company designs, manufactures, and markets mobile communication and media devices, personal computers, and portable digital music players, and sells a variety of related software, services, peripherals, networking solutions, and third-party digital content and applications. 
+Our operations and financial results are subject to various risks and uncertainties, including those described below, that could adversely affect our business, financial condition, results of operations, cash flows, and the trading price of our common stock.
+The cloud-based computing model presents execution and competitive risks.    
+Pricing and delivery models are evolving. 
+Devices and form factors influence how users access services in the cloud. 
+Challenges to our business models may reduce our revenue or operating margins.    
+We face intense competition.
+We continue to experience intense competition across all markets for our products and services. 
+Although we believe the breadth of our businesses and product portfolio is a competitive advantage, our competitors that are focused on narrower product lines may be more effective in devoting technical, marketing, and financial resources to compete with us. 
+These competitive pressures may result in decreased sales volumes, price reductions, and/or increased operating costs, such as for marketing and sales incentives, resulting in lower revenue, gross margins, and operating income.
+Third parties may claim we infringe their intellectual property rights.  
+We may not be able to protect our source code from copying if there is an unauthorized disclosure of source code.
+Security vulnerabilities could lead to reduced revenue, liability claims, or competitive harm.    
+Although this is an industry-wide problem that affects computers across all platforms, it affects our products and services in particular because hackers tend to focus their efforts on the most popular operating systems, programs, and services, and we expect them to continue to do so.
+Actual or perceived vulnerabilities may lead to claims against us. 
+Improper disclosure of personal data could result in liability and harm our reputation.  
+We are subject to government litigation and regulatory activity that affects how we design and market our products.
+Government regulatory actions and court decisions such as these may hinder our ability to provide the benefits of our software to consumers and businesses, thereby reducing the attractiveness of our products and the revenue that come from them. 
+Our business is based on successfully attracting and retaining talented employees.
+The development of software products is a complex and time-consuming process.
+Our growth depends on our ability to innovate by offering new, and adding value to our existing, software and service offerings.
+Investments in new technology are speculative.
+Unfavorable changes in economic conditions, including inflation, recession, or other changes in economic conditions, may result in lower information technology spending and adversely affect our revenue.
+If demand for PCs, servers, and other computing devices declines, or consumer or business spending for those products declines, our revenue will be adversely affected. 
+We are subject to a variety of claims and lawsuits.
+Adverse outcomes in some or all of these claims may result in significant monetary damages or injunctive relief that could adversely affect our ability to conduct our business. 
+We are subject to income taxes in the U.S. and many foreign jurisdictions. 
+Under accounting principles generally accepted in the United States (“U.S. GAAP”), we review our amortizable intangible assets for impairment when events or changes in circumstances indicate the carrying value may not be recoverable.
+A disruption or failure of our systems or operations in the event of a major earthquake, weather event, cyber-attack, terrorist attack, or other catastrophic event could cause delays in completing sales, providing services, or performing other mission-critical functions.
+These events could harm our operating results or financial condition.
+Our industry is dynamic and highly competitive, with frequent changes in both technologies and business models. 
+We must anticipate changes in technology and business models. 
+Our operations and financial results are subject to various risks and uncertainties, including those described below, that could adversely affect our business, financial condition, results of operations, cash flows, and the trading price of our common stock.
+We make significant investments in new products and services that may not be profitable. 
+Cyber-attacks and security vulnerabilities could lead to reduced revenue, increased costs, liability claims, or harm to our competitive position.
+A catastrophic event that results in the destruction or disruption of any of our critical business or information technology systems could harm our ability to conduct normal business operations. 
