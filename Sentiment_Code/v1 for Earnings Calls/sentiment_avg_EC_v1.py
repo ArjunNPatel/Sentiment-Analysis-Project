@@ -22,7 +22,7 @@ def analyze_sentiment(file_name, ticker):
     global total, values
     with open("ec_results" + ticker + ".csv", mode = "w") as f:
         writer = csv.writer(f)
-        writer.writerow(["Name", "Date of Call", "Negative", "Neutral", "Positive", "Compound"])
+        writer.writerow(["Name", "Date of Earnings Call", "Negative", "Neutral", "Positive", "Compound"])
     with open(file_name, mode = "r") as readfile:
         csv_reader = csv.DictReader(readfile,delimiter= ",", skipinitialspace = True)
 
