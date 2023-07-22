@@ -83,7 +83,7 @@ def stock_history_correlation(
     plt.plot(line_input, info["Coef"][0]*line_input + info["Intercept"], label = info["Text"], c = 'red' )
     plt.legend(loc='best')
     plt.title(f' Compound Sentiment Score on {ticker}_{corpus_type} vs {forward} Return')
-    plt.savefig(f"{ticker}_{corpus_type}_{forward} Compound Sentiment.jpeg")
+    plt.savefig(f"{ticker}_{corpus_type}_{forward} Compound Sentiment.png")
     
 
 
