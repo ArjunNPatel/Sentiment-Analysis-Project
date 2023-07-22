@@ -2,7 +2,6 @@
 Produces a scatterplot of the sentiment score from the 10k versus the stock percent change ((new - original) / original) in value. 
 Original is the adj close stock value on a day closest to the filing of the 10k.
 New is the adj close stock value on a day closest to {6months, 1 year, 18months, 2 years} after the filing of the 10k.
-Soon we will add regression to this.
 """
 import yfinance as yf
 from datetime import datetime
@@ -21,6 +20,7 @@ def stock_history_correlation(
     corpus_type,
     xlabel = "S_wa", 
     ylabel = "R_st",
+    model = "vX"
     ):
     def bad_date(Date):
         if forward == "2yr" and Begindate + timedelta(days = int(2*365)) > datetime.now():
@@ -35,6 +35,7 @@ def stock_history_correlation(
             return True
         return False
     history = yf.download(ticker, interval="1d")
+    #print(history[9900:9910])
     history["date"] = history.index
     future_from_date = []
     x = []
@@ -57,7 +58,7 @@ def stock_history_correlation(
                     "Date + 18mo Stock": adj_close(Begindate + timedelta(days= int(3*365/2)), history),
                     "Date + 2yr Stock": adj_close(Begindate + timedelta(days= int(2*365)), history),
             })
-            x.append(float(row["Compound"]))
+            x.append(float(row["Positive"]))
 
 
     x = np.array(x)
@@ -67,6 +68,11 @@ def stock_history_correlation(
     y = np.array(y)
     print(x)
     print(y)
+    with open("zsample.txt", mode = 'w') as f:
+        f.write( f'Compound Sentiment Score on {ticker}_{corpus_type} vs {forward} Return data points\n')
+        f.write("Date\tS_wa\tR_st\n")
+        for i in range(len(y)):
+            f.write(f'{str(future_from_date[i]["Date"])[0:10]}\t{x[i]}\t{y[i]}\n')
 
 
     plt.plot(x,y,'o')
@@ -79,11 +85,12 @@ def stock_history_correlation(
         "Coef": model.coef_,
         "Intercept": model.intercept_
     }"""
+    print(info)
     line_input = np.linspace(min(x), max(x))
     plt.plot(line_input, info["Coef"][0]*line_input + info["Intercept"], label = info["Text"], c = 'red' )
     plt.legend(loc='best')
     plt.title(f' Compound Sentiment Score on {ticker}_{corpus_type} vs {forward} Return')
-    plt.savefig(f"{ticker}_{corpus_type}_{forward} Compound Sentiment.png")
+    plt.savefig(f"{ticker}_{corpus_type}_{forward} Compound Sentiment {model}.png")
     
 
 
@@ -97,6 +104,7 @@ def adj_close(date, history):
             hi = mid
         else:
             lo = mid+1
+    #print(f'{date} vs {datetime.strptime(str(history.iloc[lo]["date"])[0:10], "%Y-%m-%d")}')
     return history.iloc[lo]["Adj Close"] 
 if __name__ == "__main__":
-    stock_history_correlation("resultsAAPL.csv", "AAPL", "1yr","10K")
+    stock_history_correlation("/home/arjunnipatel/2023summer/resultsMSFT (v2).csv", "MSFT", "1yr","10K", model = "v2")
