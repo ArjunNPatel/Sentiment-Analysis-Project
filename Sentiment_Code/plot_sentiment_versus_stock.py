@@ -20,7 +20,8 @@ def stock_history_correlation(
     corpus_type,
     xlabel = "S_wa", 
     ylabel = "R_st",
-    model = "vX"
+    model = "vX", 
+    swa_type = "Compound"
     ):
     def bad_date(Date):
         if forward == "2yr" and Begindate + timedelta(days = int(2*365)) > datetime.now():
@@ -58,18 +59,19 @@ def stock_history_correlation(
                     "Date + 18mo Stock": adj_close(Begindate + timedelta(days= int(3*365/2)), history),
                     "Date + 2yr Stock": adj_close(Begindate + timedelta(days= int(2*365)), history),
             })
-            x.append(float(row["Positive"]))
+            x.append(float(row[swa_type]))
 
 
     x = np.array(x)
     y = []
     for date in future_from_date:
         y.append( (date[f"Date + {forward} Stock"] -  date["Date Stock"]) / date["Date Stock"]  )
+        print(f'{y[-1]*100}% is the return if you invested for {forward} starting on {date["Date"]}' )
     y = np.array(y)
     print(x)
     print(y)
     with open("zsample.txt", mode = 'w') as f:
-        f.write( f'Compound Sentiment Score on {ticker}_{corpus_type} vs {forward} Return data points\n')
+        f.write( f'{swa_type} Sentiment Score on {ticker}_{corpus_type} vs {forward} Return data points\n')
         f.write("Date\tS_wa\tR_st\n")
         for i in range(len(y)):
             f.write(f'{str(future_from_date[i]["Date"])[0:10]}\t{x[i]}\t{y[i]}\n')
@@ -89,8 +91,14 @@ def stock_history_correlation(
     line_input = np.linspace(min(x), max(x))
     plt.plot(line_input, info["Coef"][0]*line_input + info["Intercept"], label = info["Text"], c = 'red' )
     plt.legend(loc='best')
-    plt.title(f' Compound Sentiment Score on {ticker}_{corpus_type} vs {forward} Return')
-    plt.savefig(f"{ticker}_{corpus_type}_{forward} Compound Sentiment {model}.png")
+    plt.title(f' {swa_type} Sentiment Score on {ticker}_{corpus_type} vs {forward} Return')
+    """
+    for i in range(len(future_from_date)):
+        year_text = str(future_from_date[i]["Date"])[0:4]
+      #  print(year_text)
+        plt.annotate(text = year_text, xy = (x[i], y[i]))
+     """
+    plt.savefig(f"{ticker}_{corpus_type}_{forward} {swa_type} Sentiment {model}.png")
     
 
 
@@ -107,4 +115,4 @@ def adj_close(date, history):
     #print(f'{date} vs {datetime.strptime(str(history.iloc[lo]["date"])[0:10], "%Y-%m-%d")}')
     return history.iloc[lo]["Adj Close"] 
 if __name__ == "__main__":
-    stock_history_correlation("/home/arjunnipatel/2023summer/resultsMSFT (v2).csv", "MSFT", "1yr","10K", model = "v2")
+    stock_history_correlation("/home/arjunnipatel/2023summer/resultsMSFT (v2).csv", "MSFT", "1yr","10K", model = "v2", swa_type="Negative")
