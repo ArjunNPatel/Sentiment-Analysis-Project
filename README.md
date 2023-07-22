@@ -5,11 +5,11 @@ People: Arjun N Patel, John Iacovacci and Philip G. Bradford
 A company is any business whose stock is listed on a U.S. stock exchange or whose securities are publicly offered in the United States.
 
 
-Business outlook is a qualitative measure of how a company believes it will perform financially, especially in the short-term. For example, if a company believes its new product will have a record number of sales, that is a positive business outlook. As another example, if a company thinks that it will experience supply-chain issues, thus taking loss in the near future, that is a negative business outlook. The term outlook is also used. The goal is to quantify this and see how it causes changes in stock value.
+Business outlook is a qualitative measure of how a company believes it will perform financially, especially in the short-term. For example, if a company believes its new product will have a record number of sales, that is a positive business outlook. As another example, if a company thinks that it will experience supply-chain issues, thus taking loss in the near future, that is a negative business outlook. The term outlook is also used. The goal is to quantify this and see how it causes changes in stock value. 
 
 
 ### Define the Problem
-For a given company, collect text from legal filings with the U.S. Securities and Exchange Commission and earning calls transcripts. Preprocess this text with text classification, sentence tokenization, and other methods. Run the processed text through a custom sentiment analyzer. Use the generated value as an explanatory variable for percent total return on company’s stock.
+For a given company, collect text from legal filings with the U.S. Securities and Exchange Commission and earning calls transcripts. Preprocess this text with text classification, sentence tokenization, and other methods. Run the processed text through a custom sentiment analyzer. Use the generated value as an explanatory variable for percent total return on company’s stock in a linear regression. Evaluate if sentiment is a good explanatory variable for percent total return.
 ### Assumptions
 1. If a company is generally positive and/or optimistic about its business (positive outlook), the price of the stock will increase. If a company is generally negative and/or pessimistic about its business (negative outlook), the price of the stock will decrease.
 *Justification: a company that thinks it will do well in the future acts more confident in front of investors. As a result, investors will drive the price of the stock up. A company that does not think it will do well will act less confident, making investors nervous or skeptical. This could drive the stock price down.*  
