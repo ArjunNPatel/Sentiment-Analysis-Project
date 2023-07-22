@@ -67,10 +67,16 @@ def test_sentences(sentences):
     weight_list = []
     for sentence in sentences:
         label = classifier.classify(sentence_features(sentence))
-        if label == "GENERIC":
-            weight_list.append(0)
-        else:
+        def test_sentences(sentences):
+    classifier = without_test_classifier()
+    weight_list = []
+    for sentence in sentences:
+        label = classifier.classify(sentence_features(sentence))
+        if label == "COMPANY":
             weight_list.append(1)
+        else:
+            weight_list.append(0)
+    return weight_list
     return weight_list
 
 if __name__ == "__main__":
