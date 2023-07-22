@@ -9,7 +9,7 @@ Business outlook is a qualitative measure of how a company believes it will perf
 
 
 ### Define the Problem
-Predict the future stock prices of a variety of companies. Develop a model of the stock market that uses high-quality sources; the model should be accurate.
+For a given company, collect text from legal filings with the U.S. Securities and Exchange Commission and earning calls transcripts. Preprocess this text with text classification, sentence tokenization, and other methods. Run the processed text through a custom sentiment analyzer. Use the generated value as an explanatory variable for percent total return on company’s stock.
 ### Assumptions
 1. If a company is generally positive and/or optimistic about its business (positive outlook), the price of the stock will increase. If a company is generally negative and/or pessimistic about its business (negative outlook), the price of the stock will decrease.
 *Justification: a company that thinks it will do well in the future acts more confident in front of investors. As a result, investors will drive the price of the stock up. A company that does not think it will do well will act less confident, making investors nervous or skeptical. This could drive the stock price down.*  
