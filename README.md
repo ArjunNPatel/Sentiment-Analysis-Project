@@ -21,5 +21,8 @@ For a given company, collect text from legal filings with the U.S. Securities an
 ### Background and Hypothesis
 Sentiment analysis is any algorithm that takes in a piece of text and returns some quantitative data on the emotional value of that text. SEC legal filings and earnings call transcripts will provide a significant amount of text to analyze. If the sentiment analysis algorithms deems that the majority of the text has positive emotional value, the company clearly has a positive outlook. Thus, we can infer the stock price will increase. By the same logic, if the text collected has negative emotional value according to the sentiment analysis algorithm, the company has a negative outlook (the stock price will decrease).
 
+
+The hypothesis for all the models: The sentiment score of a text and the percent total return, where Original Date is the date of the 10-K filing or Earnings Call, are related in a linear regression where the line has positive slope. 
+
 Above is an edited introduction to the report. To read more of the report, please see this Google Document:
 https://docs.google.com/document/d/1WkpPFeueW7tvD0onlND1vFPg1u333fbBOKa2XpSzYnc/edit?usp=sharing 
