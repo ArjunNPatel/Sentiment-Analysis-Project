@@ -24,6 +24,10 @@ def stock_history_correlation(
     swa_type = "Compound"
     ):
     def bad_date(Date):
+        if forward == "3d" and Begindate + timedelta(days = 3) > datetime.now():
+            return True
+        if forward == "5d" and Begindate + timedelta(days = 5) > datetime.now():
+            return True
         if forward == "2yr" and Begindate + timedelta(days = int(2*365)) > datetime.now():
             return True
         elif forward == "18mo" and Begindate + timedelta(days = int(3*365/2)) > datetime.now():
@@ -53,6 +57,8 @@ def stock_history_correlation(
             future_from_date.append( {
                     "Date":Begindate,
                     "Date Stock":adj_close(Begindate, history),
+                    "Date + 3d Stock":adj_close(Begindate + timedelta(days = 3), history), 
+                    "Date + 5d Stock":adj_close(Begindate + timedelta(days = 5), history),
                     "Date + 3mo Stock": adj_close(Begindate + timedelta(days = int(365/4)), history),
                     "Date + 6mo Stock": adj_close(Begindate + timedelta(days= int(365/2)), history),
                     "Date + 1yr Stock": adj_close(Begindate + timedelta(days= int(365)), history),
@@ -115,4 +121,4 @@ def adj_close(date, history):
     #print(f'{date} vs {datetime.strptime(str(history.iloc[lo]["date"])[0:10], "%Y-%m-%d")}')
     return history.iloc[lo]["Adj Close"] 
 if __name__ == "__main__":
-    stock_history_correlation("/home/arjunnipatel/2023summer/resultsMSFT (v2).csv", "MSFT", "1yr","10K", model = "v2", swa_type="Negative")
+    stock_history_correlation("/home/arjunnipatel/2023summer/resultsMSFT (v2).csv", "MSFT", "5d","10K", model = "v2", swa_type="Compound")
