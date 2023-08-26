@@ -9,6 +9,7 @@ Business outlook is a qualitative measure of how a company believes it will perf
 
 
 ### Define the Problem
+How can sentiment analysis of a 10K filing or earnings call (an event) predict how the stock price will change according to the event?
 For a given company, collect text from legal filings with the U.S. Securities and Exchange Commission and earning calls transcripts. Preprocess this text with text classification, sentence tokenization, and other methods. Run the processed text through a custom sentiment analyzer. Use the generated value as an explanatory variable for percent total return on company’s stock in a linear regression. Evaluate if sentiment is a good explanatory variable for percent total return.
 ### Assumptions
 1. If a company is generally positive and/or optimistic about its business (positive outlook), the price of the stock will increase. If a company is generally negative and/or pessimistic about its business (negative outlook), the price of the stock will decrease.
